@@ -2,4 +2,4 @@
 __pycache__/
 venv/
 
-./keys/rsa_private.pem
+/keys/rsa_private.pem
