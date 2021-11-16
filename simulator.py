@@ -142,7 +142,7 @@ def publish_data(
         payload = generate_data(device_id)
         client.publish("/devices/{}/{}".format(device_id, TELEMETRY_TOPIC), payload, qos=1)
 
-        time.sleep(PUBLISHING_FREQUENCY_IN_SECONDS)
+        time.sleep(float(PUBLISHING_FREQUENCY_IN_SECONDS))
 
 
 if __name__ == '__main__':
